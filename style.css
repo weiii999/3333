@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+/* iframe 樣式 */
+iframe#contentFrame {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.2); /* 背景透明度 0.2 */
+  border: none;
+  z-index: 2; /* iframe 放在第二層 */
+  display: none; /* 預設隱藏 */
+}
+
+/* 返回按鈕樣式 */
+button#closeIframeButton {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 3; /* 返回按鈕放在最上層 */
+  display: none; /* 預設隱藏 */
+}
+
+/* 選單樣式 */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 15px;
+  z-index: 4; /* 選單放在最上層 */
+}
